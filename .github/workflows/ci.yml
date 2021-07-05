@@ -13,7 +13,7 @@ jobs:
       
       - name: Run build steps
         run: |
-              rm -rf node_modules && yarn install --frozen-lockfile
+              yarn install --frozen-lockfile
               yarn run build
               yarn run test
               yarn run lint
